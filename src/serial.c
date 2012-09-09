@@ -41,7 +41,7 @@
 
 #define SERIAL_SOCKET_PATH	"/tmp/.dr_common_stream"
 #define SERIAL_BUF_SIZE		65536
-#define SERIAL_INTERFACE		"com.samsung.libdatarouter"
+#define SERIAL_INTERFACE		"User.Data.Router.Introspectable"
 
 DBusConnection *dbus_connection = NULL;
 

@@ -1,7 +1,7 @@
 Name:       capi-network-serial
 Summary:    Network Serial Framework
-Version: 0.0.3
-Release:    1
+Version: 0.0.4
+Release:    2
 Group:      TO_BE/FILLED_IN
 License:    TO BE FILLED IN
 Source0:    %{name}-%{version}.tar.gz
