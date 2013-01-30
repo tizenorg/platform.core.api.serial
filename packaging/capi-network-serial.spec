@@ -2,11 +2,9 @@ Name:       capi-network-serial
 Summary:    Network Serial Framework
 Version: 0.0.7
 Release:    0
-Group:      TO_BE/FILLED_IN
+Group:      API
 License:    Apache License, Version 2.0
 Source0:    %{name}-%{version}.tar.gz
-Requires(post): /sbin/ldconfig
-Requires(postun): /sbin/ldconfig
 
 BuildRequires:  pkgconfig(dbus-glib-1)
 BuildRequires:  pkgconfig(dlog)
@@ -21,7 +19,7 @@ Network Serial Framework
 
 %package devel
 Summary:    Network Serial Framework (DEV)
-Group:      TO_BE/FILLED
+Group:      API
 Requires:   %{name} = %{version}-%{release}
 
 %description devel
@@ -32,12 +30,11 @@ Network Serial Framework (DEV).
 
 %build
 MAJORVER=`echo %{version} | awk 'BEGIN {FS="."}{print $1}'`
-cmake . -DCMAKE_INSTALL_PREFIX=/usr -DFULLVER=%{version} -DMAJORVER=${MAJORVER}
+%cmake . -DFULLVER=%{version} -DMAJORVER=${MAJORVER}
 
 make %{?jobs:-j%jobs}
 
 %install
-rm -rf %{buildroot}
 %make_install
 
 

@@ -264,8 +264,9 @@ int serial_create(serial_h *serial)
 	pHandle = (serial_s *)g_try_malloc0(sizeof(serial_s));
 	if (pHandle == NULL)
 		return SERIAL_ERROR_OUT_OF_MEMORY;
-
-	g_type_init();
+#if !GLIB_CHECK_VERSION (2, 35, 3)
+    g_type_init ();
+#endif
 
 	pHandle->client_bus = dbus_g_bus_get(DBUS_BUS_SYSTEM, &error);
 	if (error) {
