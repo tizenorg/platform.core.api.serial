@@ -1,0 +1,8 @@
+Change-Id: I6e50451e17ecf5d3dfb0b272453acbd8669c1a11
+Code-Review+2: Anas Nashif
+Verified+1: Baptiste DURAND <baptiste.durand@eurogiciel.fr>
+Submitted-by: Anas Nashif
+Submitted-at: Wed, 29 May 2013 06:08:49 -0700
+Reviewed-on: https://review.tizen.org/gerrit/3732
+Project: platform/core/api/serial
+Branch: refs/heads/tizen
