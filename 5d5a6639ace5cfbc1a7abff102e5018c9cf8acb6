@@ -1,0 +1,8 @@
+Change-Id: I5d5a6639ace5cfbc1a7abff102e5018c9cf8acb6
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 10:06:22 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4587
+Project: platform/core/api/serial
+Branch: refs/heads/tizen
