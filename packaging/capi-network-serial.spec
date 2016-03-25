@@ -3,7 +3,7 @@ Summary:    Network Serial Framework
 Version: 0.0.7
 Release:    0
 Group:      API
-License:    Apache License, Version 2.0
+License:    Apache-2.0
 Source0:    %{name}-%{version}.tar.gz
 Source1001: 	capi-network-serial.manifest
 
